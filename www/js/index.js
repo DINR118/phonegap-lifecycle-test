@@ -1,10 +1,44 @@
-var paused_count =0;
+var paused_count = 0;
 var resumed_count = 0;
 var launched_count = 0;
 
+
+window.localStorage.setItem(
+"Bag",
+"Soft"
+);
+
+
+window.localStorage.setItem(
+"Jacket",
+"Black"
+);
+
+
+window.localStorage.setItem(
+"Pants",
+"Fabric"
+);
+
+
+window.localStorage.setItem(
+"Watch",
+"Clock"
+);
+
+
+window.localStorage.setItem(
+"Phone",
+"Electronic"
+);
+
+window.localStorage.getItem("Phone");
+
+window.localStorage.length;
+
 document.addEventListener("deviceready", onDeviceReady, false);
 		
-	
+
 function updateDisplay() {
 	$("#launched").text("Application launched: " + launched_count);
 	$("#resumed").text("Application paused: " + paused_count);
