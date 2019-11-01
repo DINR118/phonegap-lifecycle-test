@@ -2,44 +2,47 @@ var paused_count = 0;
 var resumed_count = 0;
 var launched_count = 0;
 
-var key = "bag";
-var value = "Soft";
+//var key = "bag";
+//var value = "Soft";
 window.localStorage.setItem(
 "Bag",
 "Soft"
 );
 
-var key = "Jacket";
-var value = "Black";
+//var key = "Jacket";
+//var value = "Black";
 window.localStorage.setItem(
 "Jacket",
 "Black"
-);
+);          
 
-var key = "Pants";
-var value = "Fabric";
+//var key = "Pants";
+//var value = "Fabric";
 window.localStorage.setItem(
 "Pants",
 "Fabric"
 );
 
-var key = "Watch";
-var value = "Clock";
+//var key = "Watch";
+//var value = "Clock";
 window.localStorage.setItem(
 "Watch",
 "Clock"
 );
 
-var key = "Phone";
-var value = "Electronic";
+//var key = "Phone";
+//var value = "Electronic";
 window.localStorage.setItem(
 "Phone",
 "Electronic"
 );
 
-window.localStorage.getItem("Phone");
+//window.localStorage.getItem("Phone");
 
 window.localStorage.length;
+
+document.getElementById("result").innerHTML = localStorage.getItem("Phone");
+
 
 document.addEventListener("deviceready", onDeviceReady, false);
 		
