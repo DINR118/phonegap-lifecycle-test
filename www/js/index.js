@@ -3,35 +3,35 @@ var resumed_count = 0;
 var launched_count = 0;
 
 var key = "bag";
-var key = "Soft";
+var value = "Soft";
 window.localStorage.setItem(
 "Bag",
 "Soft"
 );
 
 var key = "Jacket";
-var key = "Black";
+var value = "Black";
 window.localStorage.setItem(
 "Jacket",
 "Black"
 );
 
 var key = "Pants";
-var key = "Fabric";
+var value = "Fabric";
 window.localStorage.setItem(
 "Pants",
 "Fabric"
 );
 
 var key = "Watch";
-var key = "Clock";
+var value = "Clock";
 window.localStorage.setItem(
 "Watch",
 "Clock"
 );
 
 var key = "Phone";
-var key = "Electronic";
+var value = "Electronic";
 window.localStorage.setItem(
 "Phone",
 "Electronic"
