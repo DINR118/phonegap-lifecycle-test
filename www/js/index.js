@@ -37,6 +37,16 @@ window.localStorage.setItem(
 "Electronic"
 );
 
+//var myObj, myJSON, text, obj;
+
+var myObj = {name: "Milka Chocolate", energy: "83kcal", Fat: "5.2g", Saturates: "2.9g", sugars: "7.3g", salt: "0.06g"};
+var myJSON = JSON.stringify(myObj);
+localStorage.setItem("ChocolateJSON", myJSON);
+
+text = localStorage.getItem("ChocolateJSON");
+obj = JSON.parse(text);
+document.getElementById("Chocolate").innerHTML = obj.name;
+
 //window.localStorage.getItem("Phone");
 
 window.localStorage.length;
